@@ -19,6 +19,8 @@ The final objective is to understand transformer architectural bases and fundame
 
 ## HOW TO RUN
 
+From the directory TRANSFORMERS_REIMPLEMENTATION run the commands:
+
 ```bash
 # Environment setup
 python -m venv venv
@@ -26,7 +28,10 @@ source venv/bin/activate       # or .\venv\Scripts\activate on Windows
 pip install -r requirements.txt
 
 # Generate toy dataset
-python data/generate_toy_dataset.py
+python MODULES/generate_toy_dataset.py
+
+# download dataset
+python MODULES/data_downloader.py
 
 # Model training
 python train.py
